@@ -3,7 +3,7 @@ const lista_citas = document.querySelector('#lista-citas')
 function dibujarCitas(citas){
     let html = ''
     for(let cita of citas){
-        html += `<li class="list-group-item">${cita.nombre},${cita.lat}</li>`
+        html += `<li class="list-group-item">${cita.nombre},${cita.cita}</li>`
     }
     lista_citas.innerHTML = html;
 }

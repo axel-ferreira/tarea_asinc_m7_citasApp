@@ -44,11 +44,12 @@ async function mostrarCita(){
             rowMode: 'array',
             name: 'citas'
         }) 
-        console.log(res.rows )
     } catch (error) {
         console.error(error)
     }
     client.release()
+
+    return res.rows
 }
 
 //_________Acciones por linea de comandos____________-
